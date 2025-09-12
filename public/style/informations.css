@@ -1,0 +1,169 @@
+
+:root {
+    /* couleurs principal */
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --accent-color: #f093fb;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #17a2b8;
+    --light-color: #ffffff;
+    --dark-color: #1c1c1c;
+
+    /* boutons */
+    --btn-padding: 12px 30px;
+    --btn-radius: 25px;
+
+    /* glass card */
+    --glass-bg: rgba(255,255,255,0.1);
+    --glass-border: rgba(255,255,255,0.2);
+    --glass-blur: 10px;
+    --glass-hover-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
+
+    /* contact  */
+    --contact-bg: rgba(102, 126, 234, 0.1);
+    --contact-border: #667eea;
+
+    /* text gradient */
+    --gradient-text: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+
+    /*  overlay */
+    --hero-overlay: rgba(0,0,0,0.3);
+}
+
+/* section hero */
+.hero-section {
+    min-height: 20vh;
+    max-height: 30vh;
+    margin-top: 70px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: var(--hero-overlay);
+}
+
+.z-index-2 { z-index:2; }
+
+/* les glass card */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glass-hover-shadow);
+}
+
+/* le contenu */
+.content-box {
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* text gradient */
+.text-gradient {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* lien en neon */
+.neon-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.neon-link:hover {
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px rgba(102,126,234,0.8);
+}
+
+/*bouttons */
+.btn-custom {
+    display: inline-block;
+    padding: var(--btn-padding);
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-color);
+    text-decoration: none;
+    border-radius: var(--btn-radius);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102,126,234,0.3);
+    margin: 5px;
+}
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102,126,234,0.5);
+    color: var(--light-color);
+}
+
+/* alert */
+.alert {
+    border: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-left: 4px solid var(--info-color);
+}
+.alert-warning { border-left-color: var(--warning-color); }
+.alert-info { border-left-color: var(--info-color); }
+
+/* info contact */
+.contact-info {
+    background: var(--contact-bg);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 3px solid var(--contact-border);
+}
+
+/* icons */
+.fas { color: var(--primary-color); }
+.text-success .fas { color: var(--success-color); }
+.text-warning .fas { color: var(--warning-color); }
+.text-danger .fas { color: var(--danger-color); }
+.text-info .fas { color: var(--info-color); }
+.text-primary .fas { color: #007bff; }
+.text-secondary .fas { color: #6c757d; }
+
+/* pour le responsive */
+@media(max-width:768px){
+    .hero-section { min-height:40vh; }
+    .display-3 { font-size:2.5rem; }
+    .glass-card { margin-bottom:1.5rem; }
+    .btn-custom { display:block; margin:10px 0; text-align:center; }
+}
+
+/* les ptites animations avec les délais */
+.glass-card { animation: fadeInUp 0.6s ease-out; }
+.glass-card:nth-child(2){animation-delay:0.1s;}
+.glass-card:nth-child(3){animation-delay:0.2s;}
+.glass-card:nth-child(4){animation-delay:0.3s;}
+.glass-card:nth-child(5){animation-delay:0.4s;}
+.glass-card:nth-child(6){animation-delay:0.5s;}
+.glass-card:nth-child(7){animation-delay:0.6s;}
+.glass-card:nth-child(8){animation-delay:0.7s;}
+.glass-card:nth-child(9){animation-delay:0.8s;}
+.glass-card:nth-child(10){animation-delay:0.9s;}
+.glass-card:nth-child(11){animation-delay:1s;}
+.glass-card:nth-child(12){animation-delay:1.1s;}
+.glass-card:nth-child(13){animation-delay:1.2s;}
+
+@keyframes fadeInUp {
+    from { opacity:0; transform:translateY(30px); }
+    to { opacity:1; transform:translateY(0); }
+}
