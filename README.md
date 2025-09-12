@@ -3,7 +3,8 @@
 codeZ
 
 Bienvenue sur mon portfolio en ligne ! 
-🌐 Ce repository contient le code source de mon portfolio personnel, développé en HTML, CSS et PHP, avec des effets modernes comme les cartes "glass", des boutons animés et des sections interactives. 📌 **Objectifs :
+🌐 Ce repository contient le code source de mon portfolio personnel, développé en HTML, CSS et PHP, avec des effets modernes comme les cartes "glass", des boutons animés et des sections interactives. 
+  📌 Objectifs :
 
     Présenter mes projets et réalisations en développement web. - Montrer mes compétences techniques (HTML, CSS, JS, PHP, SQL, etc.).
 
