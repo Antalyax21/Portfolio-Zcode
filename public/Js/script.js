@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".form");
     const nom = document.getElementById("nom");
     const email = document.getElementById("email");
-    const textarea = document.getElementById("message"); 
+    const textarea = document.getElementById("message");
     const successMessage = document.getElementById("successMessage");
     const cCount = document.getElementById("char-count");
     const erreurs = {
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // regex
     function valideNom(valeur) {
-        const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ ]{5,}$/;
+        const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ ]{5,25}$/;
         return regex.test(valeur.trim());
     }
 
@@ -193,15 +193,47 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (isOk) {
-            // afficher message de succès
-            successMessage.classList.remove("d-none");
-            // réinitialiser le formulaire
-            form.reset();
-            cCount.textContent = `${maxTextarea} caractères restants`;
-            // cacher le message après 5s
-            setTimeout(() => {
-                successMessage.classList.add("d-none");
-            }, 5000);
+            const formData = new FormData(form);
+
+            fetch("traitement_formulaire.php", {
+                method: "POST",
+                body: formData
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) {
+                        // Désactiver le bouton temporairement
+                        const submitBtn = form.querySelector('button[type="submit"]');
+                        submitBtn.disabled = true;
+                        submitBtn.innerHTML = '<i class="fas fa-check me-2"></i>Message envoyé !';
+
+                        // Afficher le message avec animation
+                        successMessage.textContent = data.message;
+                        successMessage.classList.remove("d-none");
+                        successMessage.classList.add("show");
+
+                        form.reset();
+                        cCount.textContent = `${maxTextarea} caractères restants`;
+
+                        // Masquer après 4 secondes avec animation
+                        setTimeout(() => {
+                            successMessage.classList.remove("show");
+                            setTimeout(() => {
+                                successMessage.classList.add("d-none");
+                            }, 300);
+
+                            // Réactiver le bouton
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Envoyer le message';
+                        }, 4000);
+                    } else {
+                        alert("Erreur : " + data.message);
+                    }
+                })
+                .catch(() => {
+                    alert("Erreur réseau, réessayez plus tard.");
+                });
         }
+
     });
 }); 

@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public:/var/www/html
+      - ./includes:/var/www/html/includes
+      - ./composer.json:/var/www/composer.json
+      - ./vendor:/var/www/vendor
+    container_name: portfolio_app

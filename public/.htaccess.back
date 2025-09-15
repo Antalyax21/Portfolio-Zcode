@@ -1,12 +1,16 @@
 RewriteEngine On
 
+# IMPORTANT: Exclure les fichiers de traitement de formulaires des redirections
+RewriteCond %{REQUEST_URI} !^/traitment_form\.php$ [NC]
+
 # supprime .php des URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.php [NC,L]
 
-# redirection de .php vers URL sans .php
+# redirection de .php vers URL sans .php (SAUF pour traitment_form.php)
 RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteCond %{REQUEST_URI} !^/traitment_form\.php$ [NC]
 RewriteRule ^ /%1 [NC,L,R=301]
 
 # force HTTPS si pas déjà en HTTPS
@@ -21,7 +25,6 @@ ErrorDocument 404 /index.php
 Order allow,deny
 Deny from all
 </Files>
-
 <Files "*.md">
 Order allow,deny
 Deny from all
@@ -39,7 +42,7 @@ ExpiresByType image/gif "access plus 1 month"
 ExpiresByType image/svg+xml "access plus 1 month"
 </IfModule>
 
-# compression GZIP 
+# compression GZIP
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html

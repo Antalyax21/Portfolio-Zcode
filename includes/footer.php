@@ -72,7 +72,7 @@
                         </p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <small class="text-muted">
+                        <small class="text-white">
                             <i class="fas fa-heart text-danger me-1"></i>
                             Codé avec passion
                         </small>
@@ -88,7 +88,7 @@
     </button>
 
     <!-- Scripts -->
-    <script src="../public/Js/script.js"></script>
+    <script src="Js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 

@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../public/style/style.css">
-    <link rel="stylesheet" href="../public/style/informations.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/informations.css">
 
 
 </head>

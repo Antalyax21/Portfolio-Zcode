@@ -1,5 +1,5 @@
 <?php
-include '../includes/header.php';
+include 'includes/header.php';
 ?>
 
 <!-- Accueil -->
@@ -35,18 +35,15 @@ include '../includes/header.php';
         <h2 class="titre-section">À propos</h2>
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <div class="profile-card">
-                    <img src="images/robot.png" class="profile-avatar" alt="Lylia - Développeuse Fullstack">
-
+                <div class="profile-card text-center">
+                    <img src="images/robot.png" class="profile-avatar mx-auto d-block mb-4" alt="Lylia - Développeuse Fullstack">
                     <h3 class="mb-3" style="color: #9333ea; font-family: 'Poppins', sans-serif; font-weight: 600;">
                         Développeuse Passionnée
                     </h3>
-
                     <p class="lead mb-3" style="font-size: 1.1rem; line-height: 1.8;">
                         Je conçois des applications web modernes, élégantes et fonctionnelles, adaptées aux besoins
                         de mes clients.
                     </p>
-
                     <p>
                         Spécialisée dans les technologies modernes, je maîtrise le développement <strong>front-end
                             et back-end</strong>,
@@ -55,7 +52,6 @@ include '../includes/header.php';
                         En parallèle, je me forme sur d'autre technologies pour enrichir mes
                         compétences et proposer des projets encore plus complets.
                     </p>
-
                 </div>
             </div>
         </div>
@@ -126,10 +122,10 @@ include '../includes/header.php';
 
 <!-- Projets -->
 <section id="projets">
-    <div class="container">
+    <div class="container ">
         <h2 class="titre-section">Projets</h2>
         <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 fad-in-up" style="animation-delay: 0.2s;">
                 <div class="carte text-center p-3">
                     <div class="projet-image mb-3">
                         <img src="images/avocat.png" alt="Site vitrine Avocat" class="img-fluid rounded">
@@ -140,7 +136,7 @@ include '../includes/header.php';
                         site</a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 fad-in-up" style="animation-delay: 0.2s;">
                 <div class="carte text-center p-3">
                     <div class="projet-image mb-3">
                         <img src="images/plombier.png" alt="Site vitrine Plombier" class="img-fluid rounded">
@@ -151,7 +147,7 @@ include '../includes/header.php';
                         le site</a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 fad-in-up" style="animation-delay: 0.2s;">
                 <div class="carte text-center p-3">
                     <div class="projet-image mb-3">
                         <img src="images/wedding.png" alt="Site vitrine Wedding Planner" class="img-fluid rounded">
@@ -162,7 +158,7 @@ include '../includes/header.php';
                         le site</a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 fad-in-up" style="animation-delay: 0.2s;">
                 <div class="carte text-center p-3">
                     <div class="projet-image mb-3">
                         <img src="images/mon-site.png" alt="Mon site portfolio" class="img-fluid rounded">
@@ -173,7 +169,7 @@ include '../includes/header.php';
                         site</a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 fad-in-up" style="animation-delay: 0.2s;">
                 <div class="carte text-center p-3">
                     <div class="projet-image mb-3">
                         <img src="images/saas-gestion.png" alt="SaaS" class="img-fluid rounded">
@@ -186,7 +182,7 @@ include '../includes/header.php';
                     <button class="btn btn-secondary btn-sm mt-2" disabled>Aperçu bientôt</button>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 fad-in-up" style="animation-delay: 0.2s;">
                 <div class="carte text-center p-3">
                     <div class="projet-image mb-3">
                         <img src="images/saas-analytics.png" alt="SaaS" class="img-fluid rounded">
@@ -196,7 +192,7 @@ include '../includes/header.php';
                     <button class="btn btn-secondary btn-sm mt-2" disabled>Aperçu bientôt</button>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 fad-in-up" style="animation-delay: 0.2s;">
                 <div class="carte text-center p-3">
                     <div class="projet-image mb-3">
                         <img src="images/app-gestion-perso.png" alt="App Gestion Personnelle" class="img-fluid rounded">
@@ -221,28 +217,34 @@ include '../includes/header.php';
                     <div class="text-center mb-4">
                         <p class="lead">Vous avez un projet en tête ? Discutons-en !</p>
                     </div>
-                    <form class="form" method="post">
+                    <!-- Formulaire CORRECT -->
+                    <form class="form" method="post"id="contactForm">
                         <div class="mb-3">
                             <label for="nom" class="form-label">Nom complet</label>
-                            <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+                            <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom" required maxlength="30">
                             <span class="errorMessage" id="nomError"></span>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Adresse email</label>
-                            <input type="email" class="form-control" id="email" placeholder="votre@email.com" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="votre@email.com" required>
                             <span class="errorMessage" id="emailError"></span>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
                             <div id="char-count">350 caractères restants</div>
                             <span class="errorMessage" id="messageError"></span>
                         </div>
+
                         <div id="successMessage" class="alert alert-success d-none" role="alert">
                             Merci pour votre message ! Je vous répondrai dans les plus brefs délais.
                         </div>
+
+                        <!-- champ anti-spam caché -->
+                        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+
                         <button type="submit" class="btn btn-primaire w-100">
-                            <i class="fas fa-paper-plane me-2"></i>Envoyer le message
+                            <i class="fas fa-paper-plane me-2" style="color: white;"></i>Envoyer le message
                         </button>
                     </form>
                 </div>
@@ -252,5 +254,6 @@ include '../includes/header.php';
 </section>
 
 <?php
-include '../includes/footer.php';
+include 'includes/footer.php';
 ?>
+
