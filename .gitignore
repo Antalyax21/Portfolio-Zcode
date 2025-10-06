@@ -3,3 +3,5 @@
 .htaccess
 vendor/
 .env
+certbot/conf/
+certbot/www/
