@@ -1,11 +1,13 @@
+version: '3.8'
+
 services:
   web:
     build: .
+    container_name: portfolio_app
     ports:
       - "80:80"
+    env_file:
+      - .env
     volumes:
-      - ./public:/var/www/html
-      - ./includes:/var/www/html/includes
-      - ./composer.json:/var/www/composer.json
-      - ./vendor:/var/www/vendor
-    container_name: portfolio_app
+      - .:/var/www/html
+    restart: unless-stopped

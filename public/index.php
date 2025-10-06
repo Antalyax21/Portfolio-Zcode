@@ -1,5 +1,5 @@
 <?php
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 
 <!-- Accueil -->
@@ -254,6 +254,6 @@ include 'includes/header.php';
 </section>
 
 <?php
-include 'includes/footer.php';
+include '../includes/footer.php';
 ?>
 

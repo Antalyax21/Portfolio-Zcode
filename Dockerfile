@@ -1,6 +1,10 @@
 FROM php:8.2-apache
 RUN docker-php-ext-install pdo pdo_mysql
 RUN a2enmod rewrite
+
+# Copier la configuration Apache personnalisée
+COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
+
 # installer les outils nécessaires
 RUN apt-get update && apt-get install -y \
     git \
@@ -8,8 +12,10 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     && docker-php-ext-install zip \
     && rm -rf /var/lib/apt/lists/*
+
 # installer Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+
 WORKDIR /var/www/html
 
 # copier composer.json et installer les dépendances
