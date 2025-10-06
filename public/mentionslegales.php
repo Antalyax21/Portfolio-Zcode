@@ -55,9 +55,9 @@
                         <i class="fas fa-server me-2"></i>Hébergement
                     </h2>
                     <div class="content-box">
-                        <p class="mb-2">Le site est hébergé par <strong>[...]</strong></p>
-                        <p class="mb-2">Adresse : [...]</p>
-                        <p class="mb-0">Téléphone : [...]</p>
+                        <p class="mb-2">Le site est hébergé par <strong>OVH</strong></p>
+                        <p class="mb-2">Adresse : 2, rue Kellermann, 59100 Roubaix </p>
+                        <p class="mb-0">Téléphone : 1007</p>
                     </div>
                 </section>
 
