@@ -1,5 +1,5 @@
 <?php
-    include '../includes/header.php';
+    include 'includes/header.php';
 ?>
 <body class="bg-dark text-light">
     <!-- Hero Section -->
@@ -269,5 +269,5 @@
     </main>
 
 <?php
-    include '../includes/footer.php';
+    include 'includes/footer.php';
 ?>

@@ -172,7 +172,7 @@ include '../includes/header.php';
             <div class="col-md-6 col-lg-3 fad-in-up" style="animation-delay: 0.2s;">
                 <div class="carte text-center p-3">
                     <div class="projet-image mb-3">
-                        <img src="images/saas-gestion.png" alt="SaaS" class="img-fluid rounded">
+                        
                     </div>
                     <h5>SaaS Outils de gestion administrative</h5>
                     <p>Un outil d’assistance administrative en ligne destiné aux particuliers.
