@@ -28,7 +28,7 @@ include '../includes/header.php';
                         <p class="mb-2"><strong>Lylia Franchet Sioua | Code z Digitales Solutions</strong> – Développeuse Fullstack</p>
                         <p class="mb-2">
                             <i class="fas fa-envelope me-2"></i>
-                            Email : <a href="mailto:Code.z27@hotmail.com" class="neon-link">Code.z27@hotmail.com</a>
+                            Email : <a href="mailto:Contact@zcode-digital-solutions.fr" class="neon-link">Contact@zcode-digital-solutions.fr</a>
                         </p>
                         <p class="mb-2">
                             <i class="fas fa-phone me-2"></i>
