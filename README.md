@@ -116,3 +116,4 @@ Mise en place de Mailgun pour le formulaire de contact.
 Optimisation du formulaire avec validation JS et messages stylisés.
 
 Préparation du .gitignore pour ignorer les fichiers sensibles (traitement_formulaire.php et vendor/).
+# Test
