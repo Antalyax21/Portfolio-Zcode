@@ -26,7 +26,7 @@
                         <p class="mb-2"><strong>Franchet Sioua Lylia | Code z Digital Solutions</strong> – Développeuse Fullstack</p>
                         <p class="mb-2">
                             <i class="fas fa-envelope me-2"></i>
-                            Email : <a href="mailto:Code.z27@hotmail.com" class="neon-link">Code.z27@hotmail.com</a>
+                            Email : <a href="mailto:Code.z27@hotmail.com" class="neon-link">Contact@zcode-digital-solutions</a>
                         </p>
                         <p class="mb-2">
                             <i class="fas fa-phone me-2"></i>
