@@ -24,7 +24,7 @@
                         <i class="fas fa-info-circle me-2"></i>1. Objet et champ d'application
                     </h2>
                     <div class="content-box">
-                        <p class="mb-3">Les présentes Conditions Générales d'Utilisation (CGU) régissent l'utilisation du site web portfolio de <strong>Li Efes</strong>, développeuse fullstack auto-entrepreneur, accessible à l'adresse [votre-domaine.com].</p>
+                        <p class="mb-3">Les présentes Conditions Générales d'Utilisation (CGU) régissent l'utilisation du site web portfolio de <strong>Z Code Digital Solutions</strong>, développeuse fullstack auto-entrepreneur, accessible à l'adresse https://zcode-digital-solutions.fr/.</p>
                         <p class="mb-3">L'utilisation du site implique l'acceptation pleine et entière des présentes CGU. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser ce site.</p>
                         <p class="mb-0">Ces CGU s'appliquent à tous les visiteurs et utilisateurs du site, sans exception.</p>
                     </div>
