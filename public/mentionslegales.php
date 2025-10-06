@@ -97,7 +97,7 @@
                         <i class="fas fa-user-shield me-2"></i>Données personnelles
                     </h2>
                     <div class="content-box">
-                        <p class="mb-0">Les informations recueillies via le formulaire de contact (nom, email, message) sont uniquement utilisées pour répondre à vos demandes. Elles ne sont ni vendues, ni transmises à des tiers, et sont conservées uniquement le temps nécessaire au traitement de votre demande. Conformément à la réglementation RGPD, vous pouvez demander l'accès, la modification ou la suppression de vos données à tout moment via l'email <a href="mailto:Code.z27@hotmail.com" class="neon-link">Code.z27@hotmail.com</a>.</p>
+                        <p class="mb-0">Les informations recueillies via le formulaire de contact (nom, email, message) sont uniquement utilisées pour répondre à vos demandes. Elles ne sont ni vendues, ni transmises à des tiers, et sont conservées uniquement le temps nécessaire au traitement de votre demande. Conformément à la réglementation RGPD, vous pouvez demander l'accès, la modification ou la suppression de vos données à tout moment via l'email <a href="mailto:Code.z27@hotmail.com" class="neon-link">Contact@zcode-digital-solutions.fr</a>.</p>
                     </div>
                 </section>
 
