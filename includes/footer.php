@@ -44,17 +44,17 @@
                     <h5 class="footer-title">Informations</h5>
                     <p class="footer-subtitle">Transparence et conformité</p>
                     
-                    <a href="public/mentionslegales.php" class="legal-link">
+                    <a href="mentionslegales.php" class="legal-link">
                         <i class="fas fa-file-contract"></i>
                         Mentions légales
                     </a>
                     
-                    <a href="public/politique-confidentialite.php" class="legal-link">
+                    <a href="politique-confidentialite.php" class="legal-link">
                         <i class="fas fa-shield-alt"></i>
                         Politique de confidentialité
                     </a>
                     
-                    <a href="public/cg.php" class="legal-link">
+                    <a href="cg.php" class="legal-link">
                         <i class="fas fa-handshake"></i>
                         Conditions générales
                     </a>
