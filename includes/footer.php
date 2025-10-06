@@ -10,7 +10,7 @@
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <a href="mailto:Code.z27@hotmail.com" class="text-decoration-none text-light">
-                            Code.z27@hotmail.com
+                            Contact@zcode-digital-solutions.fr
                         </a>
                     </div>
                     
