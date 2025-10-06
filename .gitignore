@@ -4,4 +4,7 @@
 vendor/
 .env
 certbot/conf/
+certbot/conf/accounts/
+certbot/conf/live/
+certbot/conf/archive/
 certbot/www/
